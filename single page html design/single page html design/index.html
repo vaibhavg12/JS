@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> TUKI PAGE TITLE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">HEADING ON LEFT TOP</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT/INTRO</a></li>
+        <li><a href="#services">DATA POINT 1</a></li>
+        <li><a href="#portfolio">DATA POINT 2</a></li>
+        <li><a href="#contact">DATA POINT3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Are you too old to be a cycling legend?</h1>
+  <p>A reflection on over 100 winners of the Tour de France, shows that the average age might be higher than you think</p>
+</div>
+
+<!-- Container (Introduction) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h4>Alberto Contador concluded his last race, the Criterium Shangai, on October 29.</h4>
+      <p>The Criterium Shanghai is a race laid by the organisers of the Tour de France, another competition that the Spaniard knows well in his career, having won two of them. But the Tour de France was not the only hunting ground of “El Pistolero”: he also collected two Giro d’Italia trophies and three victories during the Vuelta a Espana.</p>
+      <p>The 2017 Vuelta was the unofficial retirement of the -now officially- former professional cyclist: every fan will remember his victory on atop the Alto del l’Angliru and his huge smile in Madrid on September 10. Contador has won many Grand Tour (the most traditional races) and he will be remembered from one or two generations of fans.</p>
+      <p>He retires at the age of 34, two years after his last major victory, the 2015 Giro, when he was 32. Chris Froome, who has beaten him twice this year to win the Vuelta and the Tour, is currently 31, and some detractors already started to say that he will be to old to repeat himself. Vincenzo Nibali, the Italian who arrived second at this year’s Vuelta is currently 32 and won his last major trophy, the Giro d’Italia only one year ago. Are Nibali and Froome past their prime or still physically able to win?</p>
+      <p>And moreover: when is the exact time when cyclists become too old? What is the average age of winners of the main competitions?</p>
+    </div>
+    <div class="col-sm-4">
+      <img class="headerimage" src="img/cycling1.JPG"></img>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Interactive) -->
+<div id="services" class="container-fluid text-center">
+  <div>
+    <div class="col-sm-4">
+      <img class="headerimage" src="img/cycling2.jpg"></img>
+    </div>
+    <div id="alignleft" class="col-sm-8">
+      <p>Is cycling a sport for young champions now? The records of the past inebriate the fan with the histories of great heroes who dominated the sport for years: Jacques Anquetil, Bernard Hinault, Felice Gimondi, Eddie Merckx,  who won for several years and started to collect trophies early.</p>
+      <p>When Chris Froome started his “treble” of Tour de France (he won the editions of 2015,2016 and 2017) he was 29.  And he won the Vuelta this year as 31. Different was the verdict of the Vuelta in 2016 and the Giro this year, who went respectively to a 27-years-old, Nairo Quintana, and to a 26-years-old Tom Dumoulin.</p>
+      <p>In the first ten places of this year’s Tour six cyclists have less than 30 years (Romain Bardet, Mikel Linda, Fabio Aru, Simon Yates and Louis Meintjes, Warren Barguil) the other four (Chris Froome, Rigoberto Uràn, Dan Martin,Alberto Contador) have the median age of nearly 32 years (31.75). Seven out of ten of the cyclists who are less than 30 also compose the top ten of this year’s Giro: the old Shark Nibali Domenico Pozzovivo and Bauke Mollema being the only exceptions. This year’s vuelta showed a 50/50 split in the top ten five are in their thirties (the winner, again Nibali, the the most combative Contador, the Canadian Michael Woods and the Spaniard José Joaquin Rojas) and five under that age (the Italian Matteo Trentin, Wilco Kelderman, the Russian all-rounder Ilnur Zakarin and the two Colombians Miguel Angel Lòpez and Esteban Chavez).</p>
+    </div>
+  </div>
+  <div class="interactive">
+    <h1>What year should you have entered the Tour De France?</h1>
+    <div class="tech-slideshow">
+      <div class="mover-1"></div>
+      <div class="mover-2"></div>
+    </div>
+    <div class="col-sm-10">
+      <input class="form-control" id="age" name="age" placeholder="Enter your age" type="number" required="">
+    </div>
+    <div class="col-sm-2">
+      <button class="btn btn-default pull-left" type="submit" onclick="buttonClick()">Send</button>
+    </div>
+</div>
+<div class="result" id="result">
+  <div class="col-sm-4">
+    <div>
+      <h2 id="resulta">The Tour De France has been won by a year old</h2>
+    </div>
+    <div>
+      <h1 id="resultb">TK</h1>
+    </div>
+    <div>
+      <h2>times.</h2>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div>
+      <h2 id="resultc">e.g. </h2>
+    </div>
+    <div>
+      <img class="headerimage" src=""></img>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <h3 id="resultd">hello</h3>
+  </div>
+</div>
+</div>
+
+<!-- Container (Data) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <div class="row text-center">
+    <div class="col-sm-6">
+      <div>
+        <p>In the last thirty years the winners were limited between the age of 23 and 34, with the youngest winner being Damiano Cunego at the Giro in 2004 and the oldest Cadel Evans 34 at the Tour of 2011.</p>
+        <p>Looking at the historical data the age with more winners for the Tour and the Giro since 1903 and 1909 the most represented ages where respectively 28 years old and 30 years old, with 15 and 12 winners, still not relevant on an overall of 99 winners for the Italian race and 104 for the French one.</p>
+      </div>
+    </div>
+    <div id="chart" class="col-sm-6">
+    </div>
+  </div>
+</div>
+
+<!-- Container (Conclusion) -->
+<div id="contact" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="headerimage" src="img/cycling3.JPG"></src>
+    </div>
+    <div class="col-sm-8">
+      <p>This enquiry of the winners of the two oldest Grand Tours - The Vuelta A Espana arrived officially in 1935, nearly thirty years later than the other two, helped to ascertain some interesting conclusions on cycling. The first would be that Contador was not too old to retire: some winners -extraordinary ones- finished their races ahead of the peloton even at 34. The fans of Chris Froome (or Vincenzo Nibali), can still hope for their idols to win the Grand Tours. What emerges looking at the data is how rare is that a winner repeats his luck when he is older (this happen more often around 26 or 27 years) but the experience matured over the years allowed those cyclists to know better and often arrive in the top positions.</p>
+      <p><em>The data of this project were obtained from Wikipedia and the code is freely available on the author’s GitHub. The Website template was made working on a W3 schools template using Bootstrap.</em></p>
+  </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<!--<script src="charts.js"></script>-->
+<script src="script.js"></script>
+
+</body>
+</html>
